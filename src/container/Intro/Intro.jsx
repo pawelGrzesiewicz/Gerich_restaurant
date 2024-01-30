@@ -32,14 +32,7 @@ const Intro = () => {
       <div className="app__video-overlay flex__center">
         <div
           className="app__video-overlay_circle flex__center"
-          onClick={() => {
-            setPlayVideo(!playVideo);
-            if (playVideo) {
-              vidRef.current.pause();
-            } else {
-              vidRef.current.play();
-            }
-          }}
+          onClick={handleVideo}
         >
           {playVideo 
           ? (
